@@ -91,3 +91,35 @@ function printGreeting2(name){
 
 console.log(printGreeting('Grace')); 
 
+
+function calculate2(num1,num2,operation ='string'){
+
+    if(operation.toLowerCase() === 'add'){
+
+        return num1 + num2
+    }
+    else if(operation === 'multiply'){
+
+        return num1 * num2
+    }
+    else if (operation.toLowerCase() === 'subtract'){
+
+        return num1 - num2 
+    }
+    else if (operation.toLowerCase() ==='division'){
+
+        return num1/num2
+    }
+    else if (operation.toLowerCase() === 'exponent'){
+
+        return num1 ** num2
+
+    }else if ( typeof operation === 'string' && typeof num2 === 'sqrt'){
+    }
+        return Math.sqrt(num1)
+}
+
+console.log(calculate2(144,'sqrt')); 
+
+
+
