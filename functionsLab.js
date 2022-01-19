@@ -79,3 +79,15 @@ function panDigital(numString){
 
 console.log(panDigital(numString1));
 
+
+
+const userInput = prompt("Please enter some input");
+
+
+function printGreeting2(name){
+
+    return alert(`Hello there, ${name}`); 
+}
+
+console.log(printGreeting('Grace')); 
+
