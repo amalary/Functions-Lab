@@ -114,12 +114,12 @@ function calculate2(num1,num2,operation ='string'){
 
         return num1 ** num2
 
-    }else if ( typeof operation === 'string' && typeof num2 === 'sqrt'){
+    }else if ( typeof operation === 'string' &&  num2 === 'sqrt'){
     }
         return Math.sqrt(num1)
 }
 
-console.log(calculate2(144,'sqrt')); 
+console.log(calculate2(100,'sqrt')); 
 
 
 
