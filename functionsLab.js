@@ -14,7 +14,7 @@ console.log(reverseWordOrder('Anthony me call'))
 
 function calculate(num1,num2,operation){
 
-    if(operation === 'add'){
+    if(operation.toLowerCase() === 'add'){
 
         return num1 + num2
     }
@@ -22,18 +22,60 @@ function calculate(num1,num2,operation){
 
         return num1 * num2
     }
-    else if (operation === 'subtract'){
+    else if (operation.toLowerCase() === 'subtract'){
 
         return num1 - num2 
     }
-    else if (operation ==='division'){
+    else if (operation.toLowerCase() ==='division'){
 
         return num1/num2
     }
-    else if (operation === 'exponent'){
+    else if (operation.toLowerCase() === 'exponent'){
 
         return num1 ** num2
     }
 }
 
-console.log(calculate(12,3,'division')); 
+console.log(calculate(12,3,'Division')); 
+
+
+// Pandigital 
+// Get help 
+
+
+
+
+if(2){
+    console.log('true'); 
+}
+else {
+    console.log('false'); 
+};
+
+console.log(numStr1.length);
+console.log(numStr1.length); 
+console.log(numStr2.length);
+
+// Anything greater than 0 is == true 
+
+// memoization  
+
+
+const numString1 = '53657687691428890'; 
+const numString2 = '0123323454'; 
+
+function panDigital(numString){
+    let array = ['0','1','2','3','4','5','6','7','8','9'];
+
+    for(let i = 0; i <numString.length; i++){
+        if(!array.includes(numString[i])){
+            continue;
+        };
+        array.splice(array.indexOf(numString[i],1));
+        
+    };
+    return !array.length;
+}
+
+console.log(panDigital(numString1));
+
