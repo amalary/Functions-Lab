@@ -98,7 +98,7 @@ function calculate2(num1,num2,operation ='string'){
 
         return num1 + num2
     }
-    else if(operation === 'multiply'){
+    else if(operation.toLowerCase() === 'multiply'){
 
         return num1 * num2
     }
